@@ -2,10 +2,7 @@ from selenium.webdriver.common.by import By
 from base.page_base import BaseClass
 
 class AmazonWishListPage:
-    """
-     Wishlist Page Operations
-
-    """
+    """ Wishlist Page Operations """
 
     DELETE_ITEM_BY_NAME = (By.NAME, 'submit.deleteItem')
     IS_PRODUCT_DELETED = (By.CSS_SELECTOR, '.a-alert-inline-success')

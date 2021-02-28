@@ -2,10 +2,7 @@ from selenium.webdriver.common.by import By
 from base.page_base import BaseClass
 
 class AmazonLogin:
-    """
-    Login Page
-
-    """
+    """ Transactions for us to login to the page """
 
     email = "orcuxtl@maxresistance.com"
     password = "T123ester"
@@ -21,7 +18,7 @@ class AmazonLogin:
 
     def login(self):
         """
-        login processes
+        User information is fetched to login
 
         """
         self.methods.wait_for_element(self.TXT_EMAIL).send_keys(self.email)

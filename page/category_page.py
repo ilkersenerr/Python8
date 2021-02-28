@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from base.page_base import BaseClass
 
 class AmazonCategoryPage:
+    """ Category Page Operations """
 
     PAGINATION_CATEGORY = (By.XPATH, '//li[@class="a-normal"]')
     CLICK_PRODUCT = (By.CSS_SELECTOR, '.s-result-item .sg-col-inner')
@@ -11,7 +12,6 @@ class AmazonCategoryPage:
         self.driver = driver
         self.methods = BaseClass(self.driver)
 
-
     def navigate_to_second_page(self):
         """
         2nd category navigate
@@ -19,7 +19,6 @@ class AmazonCategoryPage:
         """
         self.methods.presence_for_all_elements(self.PAGINATION_CATEGORY)[0].click()
         assert self.methods.wait_for_element(self.IS_SECOND_CATEGORY_PAGE).is_displayed()
-
 
     def click_product(self):
         """

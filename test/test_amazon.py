@@ -3,11 +3,11 @@ from amazon_setup import Setup
 
 class AmazonTestCase(unittest.TestCase, Setup):
     """ TEST CASE
-    1- Go to http://www.amazon.com and confirm the opening of the homepage with assertion
-    2- Opening the login screen and logging in with a user (if there is a previous site subscription, it can be)
-    3- Type 'samsung' in the Search field at the top of the screen and click the search button
+    1- Go to www.amazon.com page and confirm with assertion
+    2- User is entered to login
+    3- Write "samsung" in the search field of the screen.
     4- It will confirm that the result is found for samsung on the incoming page
-    5- Click on page 2 from the search results and confirm that page 2 is currently displayed on the page that opens
+    5- In the page that opens, the second page will be clicked and confirmed.
     6- Click the 'Add to List' button in the 3rd product from the top
     7- It will click on the 'List' link at the top of the screen and select the Wish list from within
     8- Confirm that there is a product watched on the previous page
